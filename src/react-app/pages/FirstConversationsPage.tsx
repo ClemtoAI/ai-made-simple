@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import { ArrowLeft, ArrowRight, MessageCircle, Globe, Mail, Copy, CheckCircle } from "lucide-react";
+import { ArrowLeft, ArrowRight, Copy, CheckCircle } from "lucide-react";
 import HeroSection from "@/react-app/components/HeroSection";
 
 export default function FirstConversationsPage() {
