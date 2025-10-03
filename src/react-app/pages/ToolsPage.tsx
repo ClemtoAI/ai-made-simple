@@ -176,16 +176,16 @@ export default function ToolsPage() {
                 </div>
                 
                 <div className="mt-auto">
-                  
-                    href={tool.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
-                  >
-                    <span>Try It Now</span>
-                    <ExternalLink className="w-4 h-4" />
-                  </a>
-                </div>
+  
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
+                >
+                  <span>Try It Now</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
               </div>
             ))}
           </div>
