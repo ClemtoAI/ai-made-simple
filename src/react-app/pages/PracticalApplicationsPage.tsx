@@ -97,7 +97,7 @@ export default function PracticalApplicationsPage() {
     }
   ];
 
-  const PromptCard = ({ prompt, category }: { prompt: any; category: string }) => (
+  const PromptCard = ({ prompt }: { prompt: any }) => (
   <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '380px' }}>
     <h3 className="text-lg font-semibold text-gray-900 mb-2">{prompt.title}</h3>
     <p className="text-sm text-gray-600 mb-4">{prompt.context}</p>
