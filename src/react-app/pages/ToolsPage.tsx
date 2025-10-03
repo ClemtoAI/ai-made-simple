@@ -184,8 +184,7 @@ export default function ToolsPage() {
                   >
                     <span>Try It Now</span>
                     <ExternalLink className="w-4 h-4" />
-                  </a>
-              </div>
+                </div>
               </div>
             ))}
           </div>
