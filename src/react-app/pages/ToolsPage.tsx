@@ -10,7 +10,7 @@ export default function ToolsPage() {
     {
       id: "chatgpt",
       name: "ChatGPT",
-      description: "The most popular AI chatbot for conversations, writing, and problem-solving. Perfect for beginners.",
+      description: "The most popular AI chatbot for conversations, writing, and problem-solving.",
       rating: 4.8,
       category: "Chatbot",
       price: "Free + Paid",
