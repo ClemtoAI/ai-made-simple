@@ -184,6 +184,7 @@ export default function ToolsPage() {
                   >
                     <span>Try It Now</span>
                     <ExternalLink className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             ))}
@@ -256,7 +257,7 @@ export default function ToolsPage() {
                 
                 <div className="mt-auto">
                   
-                    href={tool.url}
+                  <a href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 text-sm"
