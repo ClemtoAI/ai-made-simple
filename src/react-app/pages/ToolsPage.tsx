@@ -140,7 +140,7 @@ export default function ToolsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {beginnerTools.map((tool) => (
-              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '460px' }}>
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '450px' }}>
                 <div className="flex items-center mb-4">
                   <span className="text-3xl mr-3">{tool.logo}</span>
                   <div>
@@ -232,7 +232,7 @@ export default function ToolsPage() {
           {/* More AI Tools */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTools.map((tool) => (
-              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '280px' }}>
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '270px' }}>
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">{tool.logo}</span>
                   <div>
