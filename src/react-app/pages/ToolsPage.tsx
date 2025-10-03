@@ -140,7 +140,7 @@ export default function ToolsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {beginnerTools.map((tool) => (
-              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200">
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '520px' }}>
                 <div className="flex items-center mb-4">
                   <span className="text-3xl mr-3">{tool.logo}</span>
                   <div>
@@ -175,15 +175,17 @@ export default function ToolsPage() {
                   </ul>
                 </div>
                 
-                <a
-                  href={tool.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
-                >
-                  <span>Try It Now</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+                <div className="mt-auto">
+                  
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
+                  >
+                    <span>Try It Now</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             ))}
           </div>
@@ -230,7 +232,7 @@ export default function ToolsPage() {
           {/* More AI Tools */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTools.map((tool) => (
-              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200">
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '340px' }}>
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">{tool.logo}</span>
                   <div>
@@ -253,15 +255,17 @@ export default function ToolsPage() {
                   <span className="text-xs font-medium text-green-600">{tool.price}</span>
                 </div>
                 
-                <a
-                  href={tool.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 text-sm"
-                >
-                  <span>Try It Now</span>
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+                <div className="mt-auto">
+                  
+                    href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 text-sm"
+                  >
+                    <span>Try It Now</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
             ))}
           </div>
