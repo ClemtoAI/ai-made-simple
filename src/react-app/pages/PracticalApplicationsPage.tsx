@@ -129,7 +129,7 @@ export default function PracticalApplicationsPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <HeroSection
-        title="Practical AI Applications"
+        title="Use AI Every Day"
         subtitle="Ready-to-use prompts for work, home, creativity, and learning."
       />
 
