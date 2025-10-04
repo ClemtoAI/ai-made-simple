@@ -67,22 +67,48 @@ export default function PracticePage() {
       id: "iterative-prompting",
       title: "Iterative Prompting",
       description: "Learn to refine your requests through follow-up questions",
-      prompt: "Start with a basic request, then practice asking follow-up questions to improve the response",
-      buttonText: "Try This Exercise"
+      examples: [
+        {
+          id: "iterative-1",
+          prompt: "Write a thank you email to my manager",
+          followUp: "Then ask: 'Make it more casual and friendly'"
+        },
+        {
+          id: "iterative-2", 
+          prompt: "Explain photosynthesis",
+          followUp: "Then ask: 'Now explain it like I'm 10 years old'"
+        }
+      ]
     },
     {
       id: "context-setting",
       title: "Context Setting",
-      description: "Practice providing background information for better results",
-      prompt: "Give AI context about your role, audience, and goals before making your request",
-      buttonText: "Try This Exercise"
+      description: "Provide background information for better results",
+      examples: [
+        {
+          id: "context-1",
+          prompt: "I'm planning a birthday party for 8-year-olds. Suggest 5 games that work indoors."
+        },
+        {
+          id: "context-2",
+          prompt: "I'm a complete beginner at Excel. Show me how to create a simple budget spreadsheet."
+        }
+      ]
     },
     {
       id: "specific-formatting",
       title: "Specific Formatting",
-      description: "Learn to request exactly the format you need",
-      prompt: "Practice asking for responses in specific formats: lists, tables, emails, etc.",
-      buttonText: "Try This Exercise"
+      description: "Request exactly the format you need",
+      examples: [
+        {
+          id: "format-1",
+          prompt: "List 5 healthy breakfast ideas as a numbered list with prep time for each"
+        },
+        {
+          id: "format-2",
+          prompt: "Write a professional email declining a meeting invitation. Keep it under 50 words."
+        }
+      ]
     }
   ];
 
@@ -118,7 +144,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {easyPrompts.map((prompt) => (
-              <div key={prompt.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col h-full">
+              <div key={prompt.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col">
                 <div className="flex items-center justify-between mb-3">
                   <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                     {prompt.difficulty}
@@ -133,24 +159,22 @@ Format this as [list/email/table/etc.] with [length/style]...`;
                   <code className="text-sm text-gray-700 leading-relaxed">{prompt.prompt}</code>
                 </div>
                 
-                <div className="mt-auto">
-                  <button
-                    onClick={() => copyToClipboard(prompt.prompt, prompt.id)}
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
-                  >
-                    {copiedPrompt === prompt.id ? (
-                      <>
-                        <CheckCircle className="w-4 h-4" />
-                        <span>Copied!</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-4 h-4" />
-                        <span>Try This Prompt</span>
-                      </>
-                    )}
-                  </button>
-                </div>
+                <button
+                  onClick={() => copyToClipboard(prompt.prompt, prompt.id)}
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 mt-auto"
+                >
+                  {copiedPrompt === prompt.id ? (
+                    <>
+                      <CheckCircle className="w-4 h-4" />
+                      <span>Copied!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-4 h-4" />
+                      <span>Try This Prompt</span>
+                    </>
+                  )}
+                </button>
               </div>
             ))}
           </div>
@@ -174,19 +198,37 @@ Format this as [list/email/table/etc.] with [length/style]...`;
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {skillExercises.map((exercise) => (
-              <div key={exercise.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col h-full">
+              <div key={exercise.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{exercise.title}</h3>
-                <p className="text-gray-600 mb-4">{exercise.description}</p>
-                <p className="text-sm text-gray-500 mb-4 italic flex-grow">{exercise.prompt}</p>
+                <p className="text-gray-600 text-sm mb-4">{exercise.description}</p>
                 
-                <div className="mt-auto">
-                  <button
-                    disabled
-                    className="w-full bg-gray-300 text-gray-500 py-3 px-4 rounded-lg font-medium cursor-not-allowed"
-                  >
-                    Coming Soon
-                  </button>
+                <div className="space-y-3 mb-4 flex-grow">
+                  {exercise.examples.map((example) => (
+                    <div key={example.id} className="bg-gray-50 rounded-lg p-3">
+                      <code className="text-sm text-gray-700 block">{example.prompt}</code>
+                      {example.followUp && (
+                        <code className="text-sm text-blue-600 block mt-2 italic">{example.followUp}</code>
+                      )}
+                    </div>
+                  ))}
                 </div>
+                
+                <button
+                  onClick={() => copyToClipboard(exercise.examples[0].prompt, exercise.id)}
+                  className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 mt-auto"
+                >
+                  {copiedPrompt === exercise.id ? (
+                    <>
+                      <CheckCircle className="w-4 h-4" />
+                      <span>Copied!</span>
+                    </>
+                  ) : (
+                    <>
+                      <Copy className="w-4 h-4" />
+                      <span>Copy First Example</span>
+                    </>
+                  )}
+                </button>
               </div>
             ))}
           </div>
@@ -205,33 +247,32 @@ Format this as [list/email/table/etc.] with [length/style]...`;
           </div>
           
           <div className="bg-white rounded-lg shadow-md p-8 border border-gray-200">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">Custom Prompt Builder</h3>
             <p className="text-gray-600 mb-6">
-              Follow this simple formula to create effective prompts for any task:
+              Use this simple formula to create effective prompts for any task:
             </p>
             
             <div className="space-y-4 mb-6">
               <div className="bg-blue-50 rounded-lg p-4">
                 <h4 className="font-semibold text-blue-900 mb-2">1. Set the Context</h4>
-                <p className="text-blue-800 text-sm">Tell AI your role, audience, and situation</p>
-                <code className="block mt-2 text-xs bg-blue-100 p-2 rounded">
-                  "I'm a [your role] working on [project] for [audience]..."
+                <p className="text-blue-800 text-sm mb-2">Tell AI your role, audience, and situation</p>
+                <code className="block text-sm bg-blue-100 p-3 rounded text-blue-900">
+                  I'm a [your role] working on [project] for [audience]...
                 </code>
               </div>
               
               <div className="bg-green-50 rounded-lg p-4">
                 <h4 className="font-semibold text-green-900 mb-2">2. Make Your Request</h4>
-                <p className="text-green-800 text-sm">Be specific about what you want</p>
-                <code className="block mt-2 text-xs bg-green-100 p-2 rounded">
-                  "Please help me [specific task] that [specific requirements]..."
+                <p className="text-green-800 text-sm mb-2">Be specific about what you want</p>
+                <code className="block text-sm bg-green-100 p-3 rounded text-green-900">
+                  Please help me [specific task] that [specific requirements]...
                 </code>
               </div>
               
               <div className="bg-purple-50 rounded-lg p-4">
                 <h4 className="font-semibold text-purple-900 mb-2">3. Specify the Format</h4>
-                <p className="text-purple-800 text-sm">Tell AI exactly how you want the response</p>
-                <code className="block mt-2 text-xs bg-purple-100 p-2 rounded">
-                  "Format this as [list/email/table/etc.] with [length/style]..."
+                <p className="text-purple-800 text-sm mb-2">Tell AI exactly how you want the response</p>
+                <code className="block text-sm bg-purple-100 p-3 rounded text-purple-900">
+                  Format this as [list/email/table/etc.] with [length/style]...
                 </code>
               </div>
             </div>
@@ -249,7 +290,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
                 ) : (
                   <>
                     <Copy className="w-4 h-4" />
-                    <span>Copy Template to Clipboard</span>
+                    <span>Copy Template</span>
                   </>
                 )}
               </button>
