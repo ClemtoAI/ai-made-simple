@@ -51,51 +51,6 @@ export default function StartHerePage() {
       buttonAction: () => navigate("/start-here/practical-applications"),
       icon: <Lightbulb className="w-5 h-5" />,
       stepColor: "bg-purple-500"
-    },
-    {
-      stepNumber: 4,
-      title: "Advanced Techniques",
-      description: "Master more sophisticated prompting strategies and learn how to get exactly what you need from AI tools.",
-      features: [
-        "Advanced prompting strategies",
-        "Context and specificity",
-        "Iterative conversations",
-        "Professional use cases"
-      ],
-      buttonText: "Coming Soon",
-      icon: <Zap className="w-5 h-5" />,
-      stepColor: "bg-gray-400",
-      disabled: true
-    },
-    {
-      stepNumber: 5,
-      title: "Your AI Assistant",
-      description: "Learn how to personalise AI tools to work best for you. Create your own templates and workflows.",
-      features: [
-        "Personalisation techniques",
-        "Creating custom templates",
-        "Building workflows",
-        "Saving time and effort"
-      ],
-      buttonText: "Coming Soon",
-      icon: <User className="w-5 h-5" />,
-      stepColor: "bg-gray-400",
-      disabled: true
-    },
-    {
-      stepNumber: 6,
-      title: "Track Your Progress",
-      description: "Monitor your AI learning journey and celebrate your achievements as you become more confident.",
-      features: [
-        "Progress tracking",
-        "Skill assessments",
-        "Achievement badges",
-        "Learning recommendations"
-      ],
-      buttonText: "Coming Soon",
-      icon: <TrendingUp className="w-5 h-5" />,
-      stepColor: "bg-gray-400",
-      disabled: true
     }
   ];
 
@@ -103,7 +58,7 @@ export default function StartHerePage() {
     <>
       <HeroSection
         title="Start Learning AI"
-        subtitle="From beginner to confident user."
+        subtitle="Three steps from beginner to confident."
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
