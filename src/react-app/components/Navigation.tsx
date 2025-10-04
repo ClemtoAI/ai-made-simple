@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router";
+import { NavLink, Link } from "react-router";
 import { Home, Play, MessageSquare, Wrench, HelpCircle } from "lucide-react";
 
 export default function Navigation() {
