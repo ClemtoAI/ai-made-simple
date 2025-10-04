@@ -130,7 +130,7 @@ export default function ToolsPage() {
         subtitle="Beginner-friendly tools for everyday tasks, plus AI tools for specific needs."
       />
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
         {/* Perfect for Beginners */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Perfect for Beginners</h2>
