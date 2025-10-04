@@ -102,7 +102,7 @@ export default function PracticePage() {
       examples: [
         {
           id: "format-1",
-          prompt: "List 5 healthy breakfast ideas as a numbered list with prep time for each"
+          prompt: "List 5 healthy breakfast ideas as a numbered list with prep time for each."
         },
         {
           id: "format-2",
