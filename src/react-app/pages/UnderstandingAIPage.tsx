@@ -248,7 +248,7 @@ export default function UnderstandingAIPage() {
             Here's how to get started without feeling overwhelmed:
           </p>
 
-          <div className="space-y-4 mb-8">
+          <div className="space-y-4 mb-12">
             <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-200 hover:shadow-md transition-shadow">
               <div className="flex items-center">
                 <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">1</div>
@@ -300,31 +300,17 @@ export default function UnderstandingAIPage() {
             </div>
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What's Next?</h2>
-          
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            You now understand the basics of what AI is and what it can do.
-          </p>
-          
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            The next step? Actually trying it out. Our next guide walks you through having your first real conversation with an AI tool - we'll show you exactly what to type and what to expect.
-          </p>
-
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            Remember: everyone starts as a beginner. You don't need to master everything at once.
-          </p>
-
           {/* Call-to-Action Section */}
-          <div className="bg-blue-50 rounded-lg p-10 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready for Your First AI Conversation?</h2>
+          <div className="bg-blue-50 rounded-lg p-8 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready to Try AI Yourself?</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Now that you understand the basics, it's time to put this knowledge into practice. Our next guide will walk you through having your first conversation with an AI tool, step by step.
+              Now you understand the basics. Let's put this into practice with your first AI conversation.
             </p>
             <button
               onClick={() => navigate("/start-here/first-conversations")}
-              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors flex items-center space-x-2"
+              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors inline-flex items-center space-x-2"
             >
-              <span>Continue to First AI Conversations</span>
+              <span>Start Your First Chat</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
