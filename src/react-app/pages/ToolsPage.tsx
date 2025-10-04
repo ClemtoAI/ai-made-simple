@@ -10,7 +10,7 @@ export default function ToolsPage() {
     {
       id: "chatgpt",
       name: "ChatGPT",
-      description: "The most popular AI chatbot for conversations, writing, and problem-solving.",
+      description: "Popular AI chatbot for conversations, writing, and problem-solving.",
       rating: 4.8,
       category: "Chatbot",
       price: "Free + Paid",
@@ -134,13 +134,13 @@ export default function ToolsPage() {
         {/* Perfect for Beginners */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Perfect for Beginners</h2>
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-600 mb-6 text-lg">
             Start with these three tools - they're the easiest to learn and most useful for everyday tasks.
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {beginnerTools.map((tool) => (
-              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '420px' }}>
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-5 border border-gray-200 flex flex-col" style={{ minHeight: '400px' }}>
                 <div className="flex items-center mb-4">
                   <span className="text-3xl mr-3">{tool.logo}</span>
                   <div>
@@ -167,8 +167,8 @@ export default function ToolsPage() {
                   <h4 className="text-sm font-medium text-gray-900 mb-2">Why it's great:</h4>
                   <ul className="space-y-1">
                     {tool.pros.map((pro, index) => (
-                      <li key={index} className="text-sm text-gray-600 flex items-center">
-                        <span className="text-green-500 mr-2">✓</span>
+                      <li key={index} className="text-sm text-gray-600 flex items-start">
+                        <span className="mr-2">•</span>
                         {pro}
                       </li>
                     ))}
@@ -176,7 +176,6 @@ export default function ToolsPage() {
                 </div>
                 
                 <div className="mt-auto">
-  
                   <a href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -194,7 +193,7 @@ export default function ToolsPage() {
         {/* Explore More Tools */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Explore More Tools</h2>
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-600 mb-6 text-lg">
             Ready to explore? Here are more specialised AI tools for specific needs.
           </p>
 
@@ -256,7 +255,6 @@ export default function ToolsPage() {
                 </div>
                 
                 <div className="mt-auto">
-                  
                   <a href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
