@@ -134,6 +134,16 @@ export default function PracticalApplicationsPage() {
         subtitle="Ready-to-use prompts for work, home, creativity, and learning. Copy and customise."
       />
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
+        <div className="flex items-center space-x-2 text-sm text-gray-600">
+          <span className="text-gray-400">Understanding</span>
+          <ArrowRight className="w-3 h-3 text-gray-400" />
+          <span className="text-gray-400">First Chat</span>
+          <ArrowRight className="w-3 h-3 text-gray-400" />
+          <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full font-medium">Step 3 of 3</span>
+        </div>
+      </div>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
         {categories.map((category) => {
           const CategoryIcon = category.icon;
