@@ -425,36 +425,21 @@ export default function FirstConversationsPage() {
             </div>
           </div>
 
-          {/* What's Next Section */}
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">What's Next?</h2>
-          
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            Well done! You now know how to have conversations with AI.
-          </p>
-          
-          <p className="text-gray-700 mb-4 leading-relaxed">
-            The next step is learning practical ways to use AI for real tasks - at work, at home, and for creative projects.
-          </p>
-
-          <p className="text-gray-700 mb-8 leading-relaxed">
-            Our next guide shows you specific applications and gets you comfortable using AI as an everyday tool.
-          </p>
-
           {/* Call-to-Action Section */}
-          <div className="bg-blue-50 rounded-lg p-10 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready to Use AI for Real Tasks?</h2>
+          <div className="bg-blue-50 rounded-lg p-8 mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">Ready to Use AI Every Day?</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              You've learned how to have conversations with AI. Now discover practical ways to use it in your everyday life - at work, at home, and for personal projects.
+              You've had your first conversation. Now see how to use AI for real tasks - work, home, creativity, and learning.
             </p>
             <button
               onClick={() => navigate("/start-here/practical-applications")}
-              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors flex items-center space-x-2"
+              className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors inline-flex items-center space-x-2"
             >
               <span>Explore Practical Applications</span>
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
-
+          
           {/* Navigation */}
           <div className="flex justify-between items-center pt-8 border-t border-gray-200">
             <button
