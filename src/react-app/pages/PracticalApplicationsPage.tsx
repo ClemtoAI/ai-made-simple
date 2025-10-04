@@ -134,7 +134,7 @@ export default function PracticalApplicationsPage() {
         subtitle="Ready-to-use prompts for work, home, creativity, and learning. Copy and customise."
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
         {categories.map((category) => {
           const CategoryIcon = category.icon;
           const prompts = promptsByCategory[category.id as keyof typeof promptsByCategory];
