@@ -10,7 +10,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <HeroSection
         title="About AI Made Simple"
-        subtitle="Our mission is to make AI accessible to everyone."
+        subtitle="AI doesn’t have to be confusing. We’re here to make it simple for everyone."
       />
 
       {/* Content */}
@@ -20,7 +20,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Why We Exist</h2>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              AI tools like ChatGPT, Claude, and Gemini are transforming how we work, learn, and create. But for many people, getting started feels overwhelming. Technical jargon, confusing interfaces, and fear of doing something wrong can stop people from discovering how helpful these tools can be.
+              AI tools like ChatGPT, Claude, and Gemini are changing how people work, learn, and create. But for many, getting started feels overwhelming — too much jargon, complex interfaces, and fear of “doing it wrong.” We’re here to remove that confusion and show how simple and useful AI can be.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
@@ -32,7 +32,7 @@ export default function AboutPage() {
                 <Target className="w-8 h-8 text-blue-600 mb-3" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Our Mission</h3>
                 <p className="text-gray-700 text-sm">
-                  Make AI accessible to everyday people through clear, practical guidance
+                  To make AI simple, useful, and accessible for everyone.
                 </p>
               </div>
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
                 <Users className="w-8 h-8 text-purple-600 mb-3" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Who We Help</h3>
                 <p className="text-gray-700 text-sm">
-                  Complete beginners who want to learn AI without technical complexity
+                  Beginners who want to use AI without needing technical knowledge.
                 </p>
               </div>
 
@@ -48,7 +48,7 @@ export default function AboutPage() {
                 <Heart className="w-8 h-8 text-green-600 mb-3" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Our Approach</h3>
                 <p className="text-gray-700 text-sm">
-                  Friendly, jargon-free teaching with practical examples you can use today
+                  Clear, friendly guidance with real-life examples and ready-to-use prompts.
                 </p>
               </div>
             </div>
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">What Makes Us Different</h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              We're not trying to teach you computer science or turn you into a prompt engineering expert. We're here to help you use AI tools confidently for everyday tasks - writing emails, planning meals, learning new skills, or solving problems at work.
+              We don’t teach coding or technical theory. We show you how to use AI tools for everyday things — writing emails, planning meals, or learning something new.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
@@ -64,15 +64,15 @@ export default function AboutPage() {
             </p>
 
             <div className="bg-blue-50 rounded-lg p-6 border border-blue-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">Ready to Get Started?</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">Ready to begin your AI journey?</h3>
               <p className="text-gray-700 mb-4">
-                Start with our beginner-friendly learning path and discover how AI can help you in your daily life.
+                Start with our beginner-friendly learning path and discover how AI can help you.
               </p>
               <button
                 onClick={() => navigate("/start-here")}
                 className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors"
               >
-                Start Learning
+                Start Learning — It’s Easier Than You Think
               </button>
             </div>
           </div>
