@@ -18,7 +18,7 @@ export default function FirstConversationsPage() {
       {/* Hero Section */}
       <HeroSection
         title="Your First AI Conversation"
-        subtitle="Step-by-step guide to having your first chat with AI. We'll show you exactly what to do."
+        subtitle="Step-by-step guide to your first chat with AI. We'll show you what to do."
       />
 
       {/* Breadcrumb */}
