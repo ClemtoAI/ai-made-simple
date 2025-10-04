@@ -130,7 +130,7 @@ export default function PracticalApplicationsPage() {
       {/* Hero Section */}
       <HeroSection
         title="Practical AI Applications"
-        subtitle="Ready-to-use prompts for work, home, creativity, and learning. Just copy and customise."
+        subtitle="Ready-to-use prompts for work, home, creativity, and learning. Copy and customise."
       />
 
       {/* Breadcrumb */}
