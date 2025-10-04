@@ -18,12 +18,12 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <div className="bg-blue-500 text-white rounded-lg p-2 mr-3">
               <span className="text-lg font-bold">AI</span>
             </div>
             <span className="text-xl font-semibold text-gray-900">AI Made Simple</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation Links */}
           <div className="hidden md:block">
