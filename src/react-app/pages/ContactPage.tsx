@@ -14,7 +14,7 @@ export default function ContactPage() {
       />
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white rounded-lg shadow-md p-8 border border-gray-200">
           <div className="flex items-center mb-6">
             <MessageCircle className="w-8 h-8 text-blue-600 mr-3" />
