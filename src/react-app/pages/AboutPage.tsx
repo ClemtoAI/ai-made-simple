@@ -10,7 +10,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <HeroSection
         title="About AI Made Simple"
-        subtitle="Our mission is to make AI accessible to everyone"
+        subtitle="Our mission is to make AI accessible to everyone."
       />
 
       {/* Content */}
