@@ -141,6 +141,42 @@ export default function FirstConversationsPage() {
             </p>
           </div>
 
+          {/* Privacy and Safety */}
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Privacy and Safety</h2>
+          
+          <div className="border-l-4 border-amber-500 p-6 mb-8 rounded-lg" style={{backgroundColor: '#FFF9E6'}}>
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-6 w-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.99-.833-2.762 0L3.052 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  <span className="font-semibold text-gray-900">Remember:</span>
+                </p>
+                <ul className="space-y-2 text-gray-700 list-none">
+                  <li className="flex items-start">
+                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
+                    <span>Treat AI like a public conversation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
+                    <span>Don't share passwords, bank details, or personal addresses</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
+                    <span>Double-check important information AI provides</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
+                    <span>AI helps with tasks but doesn't replace your judgement</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
           {/* Step 3: Your First Message */}
           <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-200 hover:shadow-md transition-shadow mb-8">
             <div className="flex items-center mb-4">
@@ -386,42 +422,6 @@ export default function FirstConversationsPage() {
                   <Copy className="w-4 h-4" />
                 )}
               </button>
-            </div>
-          </div>
-
-          {/* Privacy and Safety */}
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Privacy and Safety</h2>
-          
-          <div className="border-l-4 border-amber-500 p-6 mb-8 rounded-lg" style={{backgroundColor: '#FFF9E6'}}>
-            <div className="flex">
-              <div className="flex-shrink-0">
-                <svg className="h-6 w-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.99-.833-2.762 0L3.052 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                </svg>
-              </div>
-              <div className="ml-3">
-                <p className="text-gray-700 mb-4 leading-relaxed">
-                  <span className="font-semibold text-gray-900">Remember:</span>
-                </p>
-                <ul className="space-y-2 text-gray-700 list-none">
-                  <li className="flex items-start">
-                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                    <span>Treat AI like a public conversation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                    <span>Don't share passwords, bank details, or personal addresses</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                    <span>Double-check important information AI provides</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                    <span>AI helps with tasks but doesn't replace your judgement</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
 
