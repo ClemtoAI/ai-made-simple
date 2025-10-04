@@ -95,8 +95,8 @@ Format this as [list/email/table/etc.] with [length/style]...`;
   return (
     <>
       <HeroSection
-        title="Practice Using AI Chatbots"
-        subtitle="Build confidence with real examples. Copy our prompts and see AI work."
+        title="Practice with AI"
+        subtitle="Build confidence with real examples. Copy our prompts."
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
