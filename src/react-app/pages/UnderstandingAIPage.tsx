@@ -78,29 +78,33 @@ export default function UnderstandingAIPage() {
             </p>
 
             {/* Simple Flow Diagram */}
-            <div className="bg-gray-50 rounded-lg p-6 mb-8 border border-gray-200">
-              <div className="flex items-center justify-between text-center">
+            <div className="bg-gray-50 rounded-lg p-8 md:p-10 mb-8 border border-gray-200">
+              <div className="flex flex-col md:flex-row items-center justify-between text-center gap-6 md:gap-4">
                 <div className="flex-1">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <MessageCircle className="w-8 h-8 text-blue-600" />
+                  <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <MessageCircle className="w-9 h-9 text-blue-600" />
                   </div>
                   <p className="text-sm font-medium text-gray-700">You ask a question</p>
                 </div>
-                <div className="flex-shrink-0 px-4">
-                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                
+                <div className="flex-shrink-0">
+                  <ArrowRight className="w-6 h-6 text-gray-400 rotate-90 md:rotate-0" />
                 </div>
+                
                 <div className="flex-1">
-                  <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <Globe className="w-8 h-8 text-purple-600" />
+                  <div className="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <Globe className="w-9 h-9 text-purple-600" />
                   </div>
                   <p className="text-sm font-medium text-gray-700">AI processes your question</p>
                 </div>
-                <div className="flex-shrink-0 px-4">
-                  <ArrowRight className="w-6 h-6 text-gray-400" />
+                
+                <div className="flex-shrink-0">
+                  <ArrowRight className="w-6 h-6 text-gray-400 rotate-90 md:rotate-0" />
                 </div>
+                
                 <div className="flex-1">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-2">
-                    <CheckCircle className="w-8 h-8 text-green-600" />
+                  <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <CheckCircle className="w-9 h-9 text-green-600" />
                   </div>
                   <p className="text-sm font-medium text-gray-700">AI responds helpfully</p>
                 </div>
