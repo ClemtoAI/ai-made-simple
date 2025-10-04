@@ -127,7 +127,7 @@ export default function ToolsPage() {
     <>
       <HeroSection
         title="AI Tools Directory"
-        subtitle="Find the right AI tools for your needs. Each tool includes beginner-friendly explanations and honest reviews."
+        subtitle="Beginner-friendly AI tools with honest reviews to help you choose."
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
