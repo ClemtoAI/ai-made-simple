@@ -102,8 +102,8 @@ export default function StartHerePage() {
   return (
     <>
       <HeroSection
-        title="Start Your AI Learning Journey"
-        subtitle="From complete beginner to confident user."
+        title="Start Learning AI"
+        subtitle="From beginner to confident user."
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
