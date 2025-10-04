@@ -73,7 +73,7 @@ export default function HomePage() {
     <>
       <HeroSection
         title="AI Made Simple"
-        subtitle="Learn AI tools and techniques without being a tech expert. Start your journey today."
+        subtitle="Learn AI tools and techniques without being a tech expert. Start today."
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
