@@ -102,7 +102,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
         {/* Step 1 - Easy Prompts */}
         <section>
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-6">
             <div className="w-10 h-10 bg-blue-500 text-white rounded-lg flex items-center justify-center mr-4">
               <Zap className="w-5 h-5" />
             </div>
@@ -158,7 +158,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
 
         {/* Step 2 - Improve Skills */}
         <section>
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-6">
             <div className="w-10 h-10 bg-green-500 text-white rounded-lg flex items-center justify-center mr-4">
               <ArrowRight className="w-5 h-5" />
             </div>
@@ -194,7 +194,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
 
         {/* Step 3 - Build Your Own */}
         <section>
-          <div className="flex items-center mb-8">
+          <div className="flex items-center mb-6">
             <div className="w-10 h-10 bg-purple-500 text-white rounded-lg flex items-center justify-center mr-4">
               <span className="font-bold">3</span>
             </div>
