@@ -9,7 +9,7 @@ export default function AssistantPage() {
     <div className="min-h-screen bg-gray-50">
       <HeroSection
         title="AI Assistant"
-        subtitle="Get personalised help with your AI learning journey"
+        subtitle="Get personalised help with your AI learning journey."
       />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
