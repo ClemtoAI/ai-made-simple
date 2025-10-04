@@ -10,7 +10,7 @@ export default function UnderstandingAIPage() {
       {/* Hero Section */}
       <HeroSection
         title="Understanding AI"
-        subtitle="Explains what AI is, how it works, and why it matters - no jargon."
+        subtitle="What AI is, how it works, why it matters. No jargon."
       />
 
       {/* Breadcrumb */}
