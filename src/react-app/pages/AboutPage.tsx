@@ -32,7 +32,7 @@ export default function AboutPage() {
                 <Target className="w-8 h-8 text-blue-600 mb-3" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Our Mission</h3>
                 <p className="text-gray-700 text-sm">
-                  To make AI simple, useful, and accessible for everyone.
+                  To help everyone understand and use AI with confidence.
                 </p>
               </div>
 
@@ -40,7 +40,7 @@ export default function AboutPage() {
                 <Users className="w-8 h-8 text-purple-600 mb-3" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Who We Help</h3>
                 <p className="text-gray-700 text-sm">
-                  Beginners who want to use AI without needing technical knowledge.
+                  Beginners who want to learn AI without needing technical knowledge.
                 </p>
               </div>
 
