@@ -37,7 +37,6 @@ export default function App() {
             <Route path="/start-here/practical-applications" element={<PracticalApplicationsPage />} />
             <Route path="/practice" element={<PracticePage />} />
             <Route path="/tools" element={<ToolsPage />} />
-            <Route path="/assistant" element={<AssistantPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutPage />} />
           </Routes>
