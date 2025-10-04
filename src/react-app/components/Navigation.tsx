@@ -10,7 +10,6 @@ export default function Navigation() {
     { to: "/start-here", icon: Play, label: "Start Here" },
     { to: "/practice", icon: MessageSquare, label: "Practice" },
     { to: "/tools", icon: Wrench, label: "Tools" },
-    { to: "/assistant", icon: HelpCircle, label: "Assistant" },
   ];
 
   return (
