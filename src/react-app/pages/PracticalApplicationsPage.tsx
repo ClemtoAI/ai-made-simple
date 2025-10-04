@@ -166,7 +166,7 @@ export default function PracticalApplicationsPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {categories.map((category) => {
           const CategoryIcon = category.icon;
           const prompts = promptsByCategory[category.id as keyof typeof promptsByCategory];
