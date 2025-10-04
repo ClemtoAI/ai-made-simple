@@ -17,8 +17,8 @@ export default function FirstConversationsPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <HeroSection
-        title="Your First AI Conversation"
-        subtitle="Step-by-step guide to your first chat with AI. We'll show you what to do."
+        title="Your First AI Chat"
+        subtitle="Step-by-step guide to your first chat with AI."
       />
 
       {/* Breadcrumb */}
