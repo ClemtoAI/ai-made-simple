@@ -9,7 +9,6 @@ import FirstConversationsPage from "@/react-app/pages/FirstConversationsPage";
 import PracticalApplicationsPage from "@/react-app/pages/PracticalApplicationsPage";
 import PracticePage from "@/react-app/pages/PracticePage";
 import ToolsPage from "@/react-app/pages/ToolsPage";
-import AssistantPage from "@/react-app/pages/AssistantPage";
 import ContactPage from "@/react-app/pages/ContactPage";
 import AboutPage from "@/react-app/pages/AboutPage";
 
