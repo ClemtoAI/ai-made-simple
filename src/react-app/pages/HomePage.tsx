@@ -25,12 +25,12 @@ export default function HomePage() {
     {
       stepNumber: 2,
       title: "Practice",
-      description: "Copy our best prompts and watch AI help with your daily tasks. Real examples you can use immediately.",
+      description: "Try ready-to-use prompts for everyday tasks. Copy, paste, and see AI work in real situations.",
       features: [
-        "Ready-to-use prompt templates",
-        "Writing and editing assistance",
-        "Problem-solving examples",
-        "Creative project ideas"
+        "Ready-to-use prompt examples",
+        "Work, home, and creative tasks",
+        "One-click copy buttons",
+        "Real examples you can try now"
       ],
       buttonText: "Start Practising",
       buttonAction: () => navigate("/practice"),
@@ -40,12 +40,12 @@ export default function HomePage() {
     {
       stepNumber: 3,
       title: "Tools",
-      description: "Not sure which AI tool to try? Here are the best ones to start with, plus how to use them effectively.",
+      description: "Find the right AI tools for your needs. Compare beginner-friendly options with honest reviews.",
       features: [
-        "Beginner-friendly tool reviews",
-        "Step-by-step setup guides",
-        "Best practices and tips",
-        "Free and paid options"
+        "ChatGPT, Claude, and Grammarly",
+        "Beginner-friendly ratings",
+        "Free and paid options",
+        "Direct links to try each tool"
       ],
       buttonText: "Explore Tools",
       buttonAction: () => navigate("/tools"),
@@ -55,15 +55,15 @@ export default function HomePage() {
     {
       stepNumber: 4,
       title: "Get Help",
-      description: "Stuck? Find templates, prompts, and answers to common questions. Get personalised help when you need it.",
+      description: "Questions about using AI? Get in touch and we'll help you understand it better.",
       features: [
-        "AI assistant chat support",
-        "Comprehensive FAQ section",
-        "Video tutorials and guides",
-        "Community help resources"
+        "Ask questions about AI",
+        "Get clear, simple answers",
+        "No question too basic",
+        "Friendly, jargon-free help"
       ],
-      buttonText: "Get Support",
-      buttonAction: () => navigate("/assistant"),
+      buttonText: "Contact Us",
+      buttonAction: () => navigate("/contact"),
       icon: <HelpCircle className="w-5 h-5" />,
       stepColor: "bg-orange-500"
     }
