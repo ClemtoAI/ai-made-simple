@@ -22,7 +22,7 @@ export default function FirstConversationsPage() {
       />
 
       {/* Breadcrumb */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <nav className="text-sm">
           <ol className="flex items-center space-x-2 text-gray-500">
             <li>
