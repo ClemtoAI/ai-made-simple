@@ -10,7 +10,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <HeroSection
         title="Get in Touch"
-        subtitle="We're here to help you feel confident using AI"
+        subtitle="We're here to help you feel confident using AI."
       />
 
       {/* Content */}
