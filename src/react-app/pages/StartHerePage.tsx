@@ -103,7 +103,7 @@ export default function StartHerePage() {
     <>
       <HeroSection
         title="Your AI Learning Journey Starts Here"
-        subtitle="Follow our step-by-step learning path to master AI tools and techniques. From complete beginner to confident user in just a few weeks."
+        subtitle="Step-by-step learning from complete beginner to confident AI user."
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-16">
