@@ -152,18 +152,18 @@ export default function PracticalApplicationsPage() {
                 {prompts.map((prompt) => (
                   <div
                     key={prompt.id}
-                    className="bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow"
+                    className="bg-white rounded-lg shadow-md p-6 border border-gray-200 hover:shadow-lg transition-shadow flex flex-col"
                   >
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">{prompt.title}</h3>
                     <p className="text-sm text-gray-600 mb-4">{prompt.description}</p>
-
-                    <div className="bg-gray-50 rounded-lg p-4 mb-4">
+                  
+                    <div className="bg-gray-50 rounded-lg p-4 mb-4 flex-grow">
                       <code className="text-sm text-gray-700 leading-relaxed">{prompt.prompt}</code>
                     </div>
-
+                  
                     <button
                       onClick={() => copyToClipboard(prompt.prompt, prompt.id)}
-                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
+                      className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 mt-auto"
                     >
                       {copiedPrompt === prompt.id ? (
                         <>
