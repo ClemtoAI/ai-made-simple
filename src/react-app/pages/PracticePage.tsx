@@ -112,7 +112,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
             </div>
           </div>
           
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-600 mb-6 text-lg">
             Try these one-click prompts to see what AI can do. No setup needed - just copy and paste into your favourite AI tool.
           </p>
 
@@ -168,7 +168,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
             </div>
           </div>
           
-          <p className="text-gray-600 mb-8 text-lg">
+          <p className="text-gray-600 mb-6 text-lg">
             Practice these essential techniques to get better results from AI tools.
           </p>
 
