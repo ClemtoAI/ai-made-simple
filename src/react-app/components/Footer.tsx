@@ -13,7 +13,6 @@ export default function Footer() {
           
           {/* Links */}
           <div className="flex flex-wrap justify-center gap-6 mb-8">
-            <a href="/assistant" className="text-gray-600 hover:text-blue-600 text-sm">Get Help</a>
             <a href="/about" className="text-gray-600 hover:text-blue-600 text-sm">About Us</a>
             <a href="/contact" className="text-gray-600 hover:text-blue-600 text-sm">Contact</a>
           </div>
