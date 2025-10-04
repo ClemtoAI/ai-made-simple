@@ -72,7 +72,7 @@ export default function AboutPage() {
                 onClick={() => navigate("/start-here")}
                 className="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-medium transition-colors"
               >
-                Start Learning — It’s Easier Than You Think
+                Start Learning
               </button>
             </div>
           </div>
