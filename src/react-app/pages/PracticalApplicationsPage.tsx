@@ -134,8 +134,8 @@ export default function PracticalApplicationsPage() {
         subtitle="Ready-to-use prompts for work, home, creativity, and learning. Copy and customise."
       />
 
-      {/* Breadcrumb */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      {/* Breadcrumb and Progress */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
         <nav className="text-sm">
           <ol className="flex items-center space-x-2 text-gray-500">
             <li>
@@ -153,10 +153,7 @@ export default function PracticalApplicationsPage() {
             <li className="text-gray-900">Practical Applications</li>
           </ol>
         </nav>
-      </div>
       
-      {/* Progress Indicator */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex items-center space-x-2 text-sm text-gray-600">
           <span className="text-gray-400">Understanding</span>
           <ArrowRight className="w-3 h-3 text-gray-400" />
@@ -166,7 +163,7 @@ export default function PracticalApplicationsPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
         {categories.map((category) => {
           const CategoryIcon = category.icon;
           const prompts = promptsByCategory[category.id as keyof typeof promptsByCategory];
