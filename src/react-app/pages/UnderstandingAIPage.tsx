@@ -1,9 +1,15 @@
+import { useState } from "react";
 import { useNavigate } from "react-router";
+import { useEffect } from "react";
 import { ArrowLeft, ArrowRight, MessageCircle, Globe, CheckCircle } from "lucide-react";
 import HeroSection from "@/react-app/components/HeroSection";
 
 export default function UnderstandingAIPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Understanding AI - Easy AI Guide";
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
