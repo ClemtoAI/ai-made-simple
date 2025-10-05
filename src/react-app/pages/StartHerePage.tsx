@@ -1,10 +1,15 @@
 import { useNavigate } from "react-router";
+import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
 import StepCard from "@/react-app/components/StepCard";
 import { BookOpen, MessageCircle, Lightbulb, Zap, User, TrendingUp } from "lucide-react";
 
 export default function StartHerePage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Start Here - Easy AI Guide";
+  }, []);
 
   const learningSteps = [
     {
