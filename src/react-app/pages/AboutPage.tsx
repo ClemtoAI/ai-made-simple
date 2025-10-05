@@ -9,8 +9,8 @@ export default function AboutPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <HeroSection
-        title="About AI Made Simple"
-        subtitle="AI doesn’t have to be confusing. We’re here to make it simple for everyone."
+        title="About Us"
+        subtitle="AI doesn’t have to be confusing. We’re here to make it simple."
       />
 
       {/* Content */}
@@ -20,11 +20,11 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Why We Exist</h2>
             
             <p className="text-gray-700 leading-relaxed mb-6">
-              AI tools like ChatGPT, Claude, and Gemini are changing how people work, learn, and create. But for many, getting started feels overwhelming — too much jargon, complex interfaces, and fear of “doing it wrong.” We’re here to remove that confusion and show how simple and useful AI can be.
+              AI tools like ChatGPT, Claude, and Gemini are changing how people work, learn, and create. But for many, getting started feels overwhelming — too much jargon and fear of “doing it wrong.” We’re here to remove that confusion and show you how simple and useful AI can be.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
-              AI Made Simple exists to change that. We believe everyone should feel confident using AI tools, regardless of their technical background. Our guides are written in plain English, with step-by-step instructions and real examples you can use immediately.
+              We believe everyone should feel confident using AI tools, regardless of their technical background. Our guides are written in plain English, with step-by-step instructions and real examples you can use immediately.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
@@ -40,7 +40,7 @@ export default function AboutPage() {
                 <Users className="w-8 h-8 text-purple-600 mb-3" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Who We Help</h3>
                 <p className="text-gray-700 text-sm">
-                  Beginners who want to learn AI without needing technical knowledge.
+                  Beginners who want to learn AI without technical knowledge.
                 </p>
               </div>
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">What Makes Us Different</h2>
 
             <p className="text-gray-700 leading-relaxed mb-6">
-              We don’t teach coding or technical theory. We show you how to use AI tools for everyday things — writing emails, planning meals, or learning something new.
+              We don’t teach coding or technical theory. We show you how to use AI for everyday things — writing emails, planning meals, or learning something new.
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-8">
