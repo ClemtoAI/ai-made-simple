@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router";
-import { Mail, MessageCircle } from "lucide-react";
+import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
+import { Mail, MessageCircle } from "lucide-react";
 
 export default function ContactPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Get in Touch - Easy AI Guide";
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
