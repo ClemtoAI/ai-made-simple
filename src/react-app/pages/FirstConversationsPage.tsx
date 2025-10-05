@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { useEffect } from "react";
 import { ArrowLeft, ArrowRight, Copy, CheckCircle } from "lucide-react";
 import HeroSection from "@/react-app/components/HeroSection";
 
 export default function FirstConversationsPage() {
   const navigate = useNavigate();
   const [copiedPrompt, setCopiedPrompt] = useState<string | null>(null);
+
+  useEffect(() => {
+    document.title = "Your First AI Chat - Easy AI Guide";
+  }, []);
 
   const copyToClipboard = (text: string, promptId: string) => {
     navigator.clipboard.writeText(text);
