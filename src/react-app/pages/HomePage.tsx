@@ -1,10 +1,15 @@
 import { useNavigate } from "react-router";
+import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
 import StepCard from "@/react-app/components/StepCard";
 import { BookOpen, MessageSquare, Wrench, HelpCircle } from "lucide-react";
 
 export default function HomePage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Easy AI Guide - Learn AI for Beginners";
+  }, []);
 
   const steps = [
     {
