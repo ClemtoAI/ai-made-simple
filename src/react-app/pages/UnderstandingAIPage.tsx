@@ -244,7 +244,7 @@ export default function UnderstandingAIPage() {
                 <h3 className="text-lg font-semibold text-yellow-800 mb-2">Important Things to Know</h3>
                 <div className="text-yellow-700 space-y-3">
                   <p><span className="font-semibold">AI isn't perfect.</span> It can make mistakes or give incorrect information - sometimes sounding very confident even when it's wrong. Always double-check for errors.</p>
-                  <p><span className="font-semibold">It can't do everything.</span> Free versions usually can't look things up online in real-time. Some paid versions can browse the internet and do things for you.</p>
+                  <p><span className="font-semibold">It can't do everything.</span> Free versions usually can't look things up online in real-time. Some paid versions can browse the internet and do things for you online.</p>
                   <p><span className="font-semibold">Your privacy matters.</span> AI doesn't automatically know your personal information. Don't share passwords, bank details, or addresses.</p>
                   <p><span className="font-semibold">You're still in control.</span> AI is a tool to help you work faster and smarter - it doesn't replace your judgement or creativity.</p>
                 </div>
@@ -264,7 +264,7 @@ export default function UnderstandingAIPage() {
                 <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">1</div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Choose one tool</h3>
-                  <p className="text-gray-600 text-sm">We recommend trying ChatGPT, Claude or Gemini (all have free versions)</p>
+                  <p className="text-gray-600 text-sm">We recommend trying ChatGPT, Claude or Gemini (free versions)</p>
                 </div>
               </div>
             </div>
