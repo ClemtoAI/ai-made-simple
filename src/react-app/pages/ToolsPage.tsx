@@ -1,10 +1,15 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
 import { Star, Search, ExternalLink, Filter } from "lucide-react";
 
 export default function ToolsPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
+
+  useEffect(() => {
+    document.title = "AI Tools Directory - Easy AI Guide";
+  }, []);
 
   const beginnerTools = [
     {
