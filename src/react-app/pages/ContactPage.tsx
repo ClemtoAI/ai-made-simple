@@ -56,7 +56,7 @@ export default function ContactPage() {
                     The best way to reach us is by email. We typically respond within 1-2 business days.
                   </p>
                   <a 
-                    href="mailto:hello@easyai.guide" 
+                    href="mailto:clemtoai@gmail.com" 
                     className="text-blue-600 hover:text-blue-700 font-medium"
                   >
                     clemtoai@gmail.com
