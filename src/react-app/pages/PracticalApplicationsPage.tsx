@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
 import { Copy, CheckCircle, Briefcase, Home, Lightbulb, GraduationCap, ArrowRight } from "lucide-react";
 
 export default function PracticalApplicationsPage() {
   const navigate = useNavigate();
   const [copiedPrompt, setCopiedPrompt] = useState<string | null>(null);
+
+  useEffect(() => {
+    document.title = "Use AI Every Day - Easy AI Guide";
+  }, []);
 
   const copyToClipboard = (text: string, promptId: string) => {
     navigator.clipboard.writeText(text);
