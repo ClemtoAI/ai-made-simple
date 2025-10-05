@@ -21,7 +21,7 @@ export default function Navigation() {
             <div className="bg-blue-500 text-white rounded-lg p-2 mr-3">
               <span className="text-lg font-bold">AI</span>
             </div>
-            <span className="text-xl font-semibold text-gray-900">AI Made Simple</span>
+            <span className="text-xl font-semibold text-gray-900">Easy AI Guide</span>
           </Link>
 
           {/* Desktop Navigation Links */}
