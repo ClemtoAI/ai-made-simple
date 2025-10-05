@@ -274,7 +274,7 @@ export default function FirstConversationsPage() {
             </ul>
 
             <p className="text-gray-700 font-medium">
-              AI remembers what you've said in the same chat, so you can have a back-and-forth conversation naturally
+              AI remembers what you've said in the same chat, so you can have a back-and-forth conversation naturally.
             </p>
           </div>
 
