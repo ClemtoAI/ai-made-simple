@@ -261,24 +261,20 @@ export default function FirstConversationsPage() {
             <ul className="space-y-2 text-gray-700 list-none mb-6">
               <li className="flex items-start">
                 <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                <span>Treat AI like a public conversation</span>
+                <span>AI will respond within seconds</span>
               </li>
               <li className="flex items-start">
                 <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                <span>Don't share passwords, bank details, or personal addresses</span>
+                <span>The response appears in the chat area below your message</span>
               </li>
               <li className="flex items-start">
                 <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                <span>Double-check important information AI provides</span>
-              </li>
-              <li className="flex items-start">
-                <span className="text-amber-600 mr-3 flex-shrink-0">•</span>
-                <span>AI helps with tasks but doesn't replace your judgement</span>
+                <span>You can continue the conversation by typing another message</span>
               </li>
             </ul>
 
             <p className="text-gray-700 font-medium">
-              AI remembers what you've said in the same chat, so you can have a back-and-forth conversation naturally.
+              AI remembers what you've said in the same chat, so you can have a back-and-forth conversation naturally
             </p>
           </div>
 
