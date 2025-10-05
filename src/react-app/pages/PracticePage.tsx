@@ -1,9 +1,14 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
 import { Copy, Zap, ArrowRight, CheckCircle } from "lucide-react";
 
 export default function PracticePage() {
   const [copiedPrompt, setCopiedPrompt] = useState<string | null>(null);
+
+  useEffect(() => {
+    document.title = "Practice with AI - Easy AI Guide";
+  }, []);
 
   const copyToClipboard = (text: string, promptId: string) => {
     navigator.clipboard.writeText(text);
