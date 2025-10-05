@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router";
-import { Target, Users, Heart } from "lucide-react";
+import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
+import { Target, Users, Heart } from "lucide-react";
 
 export default function AboutPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "About Us - Easy AI Guide";
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
