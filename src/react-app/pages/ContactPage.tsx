@@ -23,7 +23,7 @@ export default function ContactPage() {
 
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 leading-relaxed mb-6">
-              AI Made Simple exists to help everyday people feel confident using AI tools. Whether you have questions about our guides, suggestions for new content, or just want to share your AI learning journey, we'd love to hear from you.
+              Easy AI Guide exists to help everyday people feel confident using AI tools. Whether you have questions about our guides, suggestions for new content, or just want to share your AI learning journey, we'd love to hear from you.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">How We Can Help</h3>
