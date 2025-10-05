@@ -62,11 +62,11 @@ export default function UnderstandingAIPage() {
             </p>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Unlike regular computer programs that follow strict rules, AI can understand what you're asking and respond naturally. Want help writing a tricky email? Need to plan a quick dinner menu? Just ask in plain English.
+              AI can understand what you're asking and respond naturally. Want help writing a tricky email? Need to plan a quick dinner menu? Just ask in plain English (or any other language).
             </p>
             
             <p className="text-gray-700 mb-8 leading-relaxed">
-              The most popular AI tools are called <strong>chatbots</strong> - programs you type to, like texting. The main ones for beginners are ChatGPT, Claude and Gemini. You can use them on your phone, tablet, or computer.
+              The most popular AI tools are called <strong>chatbots</strong> - programs you type messages to, like texting. Popular chatbots for beginners include ChatGPT, Claude and Gemini. You can use them on your phone, tablet, or computer.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export default function UnderstandingAIPage() {
             </div>
             
             <p className="text-gray-700 mb-6 leading-relaxed">
-              AI recognises patterns in how people use words. It's been trained by reading books, websites, and articles - like how you learn language by reading and listening.
+              AI recognises patterns in how people use words. It's been trained by reading books, websites, and articles - similar to how we learn language by reading and listening.
             </p>
 
             <p className="text-gray-700 mb-6 leading-relaxed">
@@ -131,7 +131,7 @@ export default function UnderstandingAIPage() {
                 </div>
                 <div className="ml-3">
                   <p className="text-gray-800 leading-relaxed">
-                    <span className="font-semibold text-gray-900">Important to know:</span> AI doesn't think or feel like humans do. It's more like a very clever text predictor that's learned to be helpful.
+                    <span className="font-semibold text-gray-900">Important to know:</span> AI doesn't think like humans do (yet). It's more like a very clever text predictor that's learned to be helpful.
                   </p>
                 </div>
               </div>
@@ -243,9 +243,9 @@ export default function UnderstandingAIPage() {
               <div className="ml-3">
                 <h3 className="text-lg font-semibold text-yellow-800 mb-2">Important Things to Know</h3>
                 <div className="text-yellow-700 space-y-3">
-                  <p><span className="font-semibold">AI isn't perfect.</span> It can make mistakes or give incorrect information - sometimes sounding very confident even when it's wrong. Always double-check important facts.</p>
-                  <p><span className="font-semibold">It can't do everything.</span> Free versions usually can't look things up online in real-time or remember past conversations between different chat sessions. Some paid versions can browse the internet.</p>
-                  <p><span className="font-semibold">Your privacy matters.</span> AI doesn't automatically know your personal information. Don't share passwords, bank details, or personal addresses.</p>
+                  <p><span className="font-semibold">AI isn't perfect.</span> It can make mistakes or give incorrect information - sometimes sounding very confident even when it's wrong. Always double-check for errors.</p>
+                  <p><span className="font-semibold">It can't do everything.</span> Free versions usually can't look things up online in real-time. Some paid versions can browse the internet and do things for you.</p>
+                  <p><span className="font-semibold">Your privacy matters.</span> AI doesn't automatically know your personal information. Don't share passwords, bank details, or addresses.</p>
                   <p><span className="font-semibold">You're still in control.</span> AI is a tool to help you work faster and smarter - it doesn't replace your judgement or creativity.</p>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export default function UnderstandingAIPage() {
                 <div className="w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center mr-4 font-semibold">1</div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Choose one tool</h3>
-                  <p className="text-gray-600 text-sm">We recommend ChatGPT or Claude (both have free versions)</p>
+                  <p className="text-gray-600 text-sm">We recommend trying ChatGPT, Claude or Gemini (all have free versions)</p>
                 </div>
               </div>
             </div>
