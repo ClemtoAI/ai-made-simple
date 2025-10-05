@@ -59,7 +59,7 @@ export default function ContactPage() {
                     href="mailto:hello@easyai.guide" 
                     className="text-blue-600 hover:text-blue-700 font-medium"
                   >
-                    hello@easyai.guide
+                    clemtoai@gmail.com
                   </a>
                 </div>
               </div>
