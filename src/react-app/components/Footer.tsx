@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="bg-blue-500 text-white rounded-lg p-2 mr-3">
               <span className="text-lg font-bold">AI</span>
             </div>
-            <span className="text-xl font-semibold text-gray-900">AI Made Simple</span>
+            <span className="text-xl font-semibold text-gray-900">Easy AI Guide</span>
           </div>
           
           {/* Links */}
@@ -20,7 +20,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="pt-6 border-t border-gray-200 w-full">
             <p className="text-gray-500 text-sm text-center">
-              © 2024 AI Made Simple. Making artificial intelligence accessible to everyone.
+              © 2025 Easy AI Guide. Making artificial intelligence accessible to everyone.
             </p>
           </div>
         </div>
