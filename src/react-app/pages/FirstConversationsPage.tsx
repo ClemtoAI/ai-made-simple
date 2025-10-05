@@ -199,40 +199,40 @@ export default function FirstConversationsPage() {
             </p>
 
             <div className="space-y-3 mb-6">
-              <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 relative group">
-                <p className="text-gray-800 italic pr-8">"Hello! I'm new to AI. Can you explain what you are in simple terms?"</p>
+              <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 relative">
+                <p className="text-gray-800 italic pr-10">"Hello! I'm new to AI. Can you explain what you are in simple terms?"</p>
                 <button
                   onClick={() => copyToClipboard("Hello! I'm new to AI. Can you explain what you are in simple terms?", "prompt-1")}
-                  className="absolute top-3 right-3 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute top-3 right-3 p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
                 >
                   {copiedPrompt === "prompt-1" ? (
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4" />
                   ) : (
                     <Copy className="w-4 h-4" />
                   )}
                 </button>
               </div>
-              <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 relative group">
-                <p className="text-gray-800 italic pr-8">"Help me write a short thank you message to someone who helped me today."</p>
+              <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 relative">
+                <p className="text-gray-800 italic pr-10">"Help me write a short thank you message to someone who helped me today."</p>
                 <button
                   onClick={() => copyToClipboard("Help me write a short thank you message to someone who helped me today.", "prompt-2")}
-                  className="absolute top-3 right-3 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute top-3 right-3 p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
                 >
                   {copiedPrompt === "prompt-2" ? (
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4" />
                   ) : (
                     <Copy className="w-4 h-4" />
                   )}
                 </button>
               </div>
-              <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 relative group">
-                <p className="text-gray-800 italic pr-8">"What are three easy dinner ideas I can make with chicken?"</p>
+              <div className="bg-gray-50 rounded-lg p-3 border border-gray-200 relative">
+                <p className="text-gray-800 italic pr-10">"What are three easy dinner ideas I can make with chicken?"</p>
                 <button
                   onClick={() => copyToClipboard("What are three easy dinner ideas I can make with chicken?", "prompt-3")}
-                  className="absolute top-3 right-3 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="absolute top-3 right-3 p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
                 >
                   {copiedPrompt === "prompt-3" ? (
-                    <CheckCircle className="w-4 h-4 text-green-500" />
+                    <CheckCircle className="w-4 h-4" />
                   ) : (
                     <Copy className="w-4 h-4" />
                   )}
@@ -292,40 +292,40 @@ export default function FirstConversationsPage() {
             <div className="mb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Ask for changes:</h3>
               <div className="space-y-2 mb-4">
-                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative group">
-                  <p className="text-gray-800 italic text-sm pr-6">"Can you make that shorter?"</p>
+                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative">
+                  <p className="text-gray-800 italic text-sm pr-10">"Can you make that shorter?"</p>
                   <button
                     onClick={() => copyToClipboard("Can you make that shorter?", "change-1")}
-                    className="absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute top-2 right-2 p-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
                   >
                     {copiedPrompt === "change-1" ? (
-                      <CheckCircle className="w-3 h-3 text-green-500" />
+                      <CheckCircle className="w-3 h-3" />
                     ) : (
                       <Copy className="w-3 h-3" />
                     )}
                   </button>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative group">
-                  <p className="text-gray-800 italic text-sm pr-6">"Explain it more simply please"</p>
+                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative">
+                  <p className="text-gray-800 italic text-sm pr-10">"Explain it more simply please"</p>
                   <button
                     onClick={() => copyToClipboard("Explain it more simply please", "change-2")}
-                    className="absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute top-2 right-2 p-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
                   >
                     {copiedPrompt === "change-2" ? (
-                      <CheckCircle className="w-3 h-3 text-green-500" />
+                      <CheckCircle className="w-3 h-3" />
                     ) : (
                       <Copy className="w-3 h-3" />
                     )}
                   </button>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative group">
-                  <p className="text-gray-800 italic text-sm pr-6">"Give me three different versions"</p>
+                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative">
+                  <p className="text-gray-800 italic text-sm pr-10">"Give me three different versions"</p>
                   <button
                     onClick={() => copyToClipboard("Give me three different versions", "change-3")}
-                    className="absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute top-2 right-2 p-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
                   >
                     {copiedPrompt === "change-3" ? (
-                      <CheckCircle className="w-3 h-3 text-green-500" />
+                      <CheckCircle className="w-3 h-3" />
                     ) : (
                       <Copy className="w-3 h-3" />
                     )}
@@ -335,27 +335,27 @@ export default function FirstConversationsPage() {
 
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Add more detail:</h3>
               <div className="space-y-2 mb-4">
-                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative group">
-                  <p className="text-gray-800 italic text-sm pr-6">"Make it sound more professional"</p>
+                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative">
+                  <p className="text-gray-800 italic text-sm pr-10">"Make it sound more professional"</p>
                   <button
                     onClick={() => copyToClipboard("Make it sound more professional", "detail-1")}
-                    className="absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute top-2 right-2 p-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
                   >
                     {copiedPrompt === "detail-1" ? (
-                      <CheckCircle className="w-3 h-3 text-green-500" />
+                      <CheckCircle className="w-3 h-3" />
                     ) : (
                       <Copy className="w-3 h-3" />
                     )}
                   </button>
                 </div>
-                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative group">
-                  <p className="text-gray-800 italic text-sm pr-6">"I need it for someone who's never done this before"</p>
+                <div className="bg-gray-50 rounded-lg p-2 border border-gray-200 relative">
+                  <p className="text-gray-800 italic text-sm pr-10">"I need it for someone who's never done this before"</p>
                   <button
                     onClick={() => copyToClipboard("I need it for someone who's never done this before", "detail-2")}
-                    className="absolute top-2 right-2 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                    className="absolute top-2 right-2 p-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded transition-colors"
                   >
                     {copiedPrompt === "detail-2" ? (
-                      <CheckCircle className="w-3 h-3 text-green-500" />
+                      <CheckCircle className="w-3 h-3" />
                     ) : (
                       <Copy className="w-3 h-3" />
                     )}
@@ -376,54 +376,54 @@ export default function FirstConversationsPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 relative group">
+            <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 relative">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-pink-500 text-white rounded-lg flex items-center justify-center mr-3 font-semibold">1</div>
                 <h3 className="text-lg font-semibold text-gray-900">Creative</h3>
               </div>
-              <p className="text-gray-700 italic pr-8">"Write me a short poem about morning coffee"</p>
+              <p className="text-gray-700 italic pr-12">"Write me a short poem about morning coffee"</p>
               <button
                 onClick={() => copyToClipboard("Write me a short poem about morning coffee", "practice-1")}
-                className="absolute top-6 right-6 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                className="absolute top-6 right-6 p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
               >
                 {copiedPrompt === "practice-1" ? (
-                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <CheckCircle className="w-4 h-4" />
                 ) : (
                   <Copy className="w-4 h-4" />
                 )}
               </button>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 relative group">
+            <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 relative">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-green-500 text-white rounded-lg flex items-center justify-center mr-3 font-semibold">2</div>
                 <h3 className="text-lg font-semibold text-gray-900">Practical</h3>
               </div>
-              <p className="text-gray-700 italic pr-8">"Give me a simple 3-day meal plan for busy weekdays"</p>
+              <p className="text-gray-700 italic pr-12">"Give me a simple 3-day meal plan for busy weekdays"</p>
               <button
                 onClick={() => copyToClipboard("Give me a simple 3-day meal plan for busy weekdays", "practice-2")}
-                className="absolute top-6 right-6 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                className="absolute top-6 right-6 p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
               >
                 {copiedPrompt === "practice-2" ? (
-                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <CheckCircle className="w-4 h-4" />
                 ) : (
                   <Copy className="w-4 h-4" />
                 )}
               </button>
             </div>
 
-            <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 relative group">
+            <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200 relative">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 bg-blue-500 text-white rounded-lg flex items-center justify-center mr-3 font-semibold">3</div>
                 <h3 className="text-lg font-semibold text-gray-900">Learning</h3>
               </div>
-              <p className="text-gray-700 italic pr-8">"Explain what WiFi is, like I'm 10 years old"</p>
+              <p className="text-gray-700 italic pr-12">"Explain what WiFi is, like I'm 10 years old"</p>
               <button
                 onClick={() => copyToClipboard("Explain what WiFi is, like I'm 10 years old", "practice-3")}
-                className="absolute top-6 right-6 p-1 text-gray-400 hover:text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity"
+                className="absolute top-6 right-6 p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
               >
                 {copiedPrompt === "practice-3" ? (
-                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <CheckCircle className="w-4 h-4" />
                 ) : (
                   <Copy className="w-4 h-4" />
                 )}
