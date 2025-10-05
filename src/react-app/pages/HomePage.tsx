@@ -72,7 +72,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection
-        title="Making AI Simple and Accessible"
+        title="AI Made Simple"
         subtitle="Learn AI without being a tech expert. Start today."
       />
       
