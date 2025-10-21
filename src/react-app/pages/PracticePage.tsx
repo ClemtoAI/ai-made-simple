@@ -375,7 +375,7 @@ Format this as [list/email/table/etc.] with [length/style]...`;
           </div>
           
           <p className="text-gray-600 mb-6 text-lg">
-            Practice these essential techniques to get better results from AI tools.
+            Practice these essential techniques to get better results from AI tools. 
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
