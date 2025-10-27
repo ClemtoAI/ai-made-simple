@@ -19,11 +19,11 @@ export default function ToolsPage() {
       rating: 4.8,
       category: "Chatbot",
       price: "Free + Paid",
-      pros: ["Easy to use", "Great for writing", "Excellent support"],
+      pros: ["Easy to use", "Great for writing", "Works for many tasks"],
       limitations: [
-        "Can be overconfident and wrong - always fact-check important information",
-        "Free version uses older model (GPT-3.5)",
-        "Sometimes goes offline during high demand"
+        "Free tier uses GPT-4o but limits messages (about 10 per 5 hours)",
+        "Can be overconfident and give wrong answers - always fact-check",
+        "Plus plan costs around £16/month for higher limits"
       ],
       url: "https://chat.openai.com",
       logo: "🤖"
@@ -37,8 +37,8 @@ export default function ToolsPage() {
       price: "Free + Paid",
       pros: ["Very safe", "Great reasoning", "Long conversations"],
       limitations: [
-        "Free tier more limited than ChatGPT",
-        "Slightly slower response times",
+        "Free tier has limited daily messages",
+        "Pro plan around £13/month (billed annually in USD)",
         "Can be overly cautious and refuse harmless requests"
       ],
       url: "https://claude.ai",
@@ -53,8 +53,8 @@ export default function ToolsPage() {
       price: "Free + Paid",
       pros: ["Easy setup", "Works everywhere", "Real-time help"],
       limitations: [
-        "Free version only catches basic errors",
-        "AI features require expensive premium subscription (£12/month)",
+        "Free version only catches basic grammar errors",
+        "Pro plan costs around £24/month (or £114/year) for AI features",
         "Can make writing feel robotic if overused"
       ],
       url: "https://grammarly.com",
@@ -71,9 +71,9 @@ export default function ToolsPage() {
       category: "Productivity",
       price: "Paid",
       limitations: [
-        "Requires existing Notion subscription",
-        "AI features add £8/month on top of base cost",
-        "Only works within Notion - not a standalone tool"
+        "Requires Notion Business plan (around £17/month per user)",
+        "Only works within Notion - not standalone",
+        "Free and Plus plans get only a small trial of AI features"
       ],
       url: "https://notion.so",
       logo: "📝"
@@ -86,9 +86,9 @@ export default function ToolsPage() {
       category: "Creative",
       price: "Paid",
       limitations: [
-        "No free tier - minimum £8/month",
-        "Requires Discord account to use",
-        "Steep learning curve for prompt writing"
+        "No free tier - Basic plan starts at £8/month",
+        "Steep learning curve for writing good prompts",
+        "Commercial use above £790K revenue requires Pro plan"
       ],
       url: "https://midjourney.com",
       logo: "🎨"
@@ -101,9 +101,9 @@ export default function ToolsPage() {
       category: "Marketing",
       price: "Paid",
       limitations: [
-        "Expensive - starts at £39/month",
-        "Focused only on marketing content",
-        "Output quality varies significantly"
+        "Expensive - starts at around £31/month per user",
+        "Only 7-day free trial, no free plan",
+        "Output quality varies and often needs editing"
       ],
       url: "https://jasper.ai",
       logo: "📢"
@@ -117,8 +117,8 @@ export default function ToolsPage() {
       price: "Free + Paid",
       limitations: [
         "Free version very limited (2,000 words/month)",
-        "Output can feel generic without editing",
-        "Focused on marketing - not general purpose"
+        "Paid plans start around £23/month",
+        "Output can feel generic and needs human editing"
       ],
       url: "https://copy.ai",
       logo: "✨"
@@ -131,9 +131,9 @@ export default function ToolsPage() {
       category: "Productivity",
       price: "Free + Paid",
       limitations: [
-        "Free version limited to 600 minutes/month",
-        "Transcription accuracy drops with accents",
-        "Requires good audio quality to work well"
+        "Free tier limited to 300 minutes/month and 30-minute meetings",
+        "Pro plan around £13/month (billed annually)",
+        "Accuracy drops with multiple speakers or accents"
       ],
       url: "https://otter.ai",
       logo: "🎤"
@@ -146,9 +146,9 @@ export default function ToolsPage() {
       category: "Creative",
       price: "Free + Paid",
       limitations: [
-        "Best AI features require Canva Pro (£10.99/month)",
-        "Free tier has limited AI generations",
-        "Can produce generic-looking designs"
+        "Free tier limited to about 50 AI prompts per month",
+        "Pro plan £11/month or £100/year for unlimited AI features",
+        "AI-generated designs can look generic without editing"
       ],
       url: "https://canva.com",
       logo: "🎨"
@@ -181,6 +181,15 @@ export default function ToolsPage() {
       />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-10">
+        
+        {/* Pricing Disclaimer */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+          <p className="text-sm text-gray-700">
+            <strong>Pricing note:</strong> Costs shown are approximate and based on October 2025 rates. 
+            Most tools charge in USD - your bank converts to GBP. Always check the official website for current pricing.
+          </p>
+        </div>
+
         {/* Perfect for Beginners */}
         <section>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Perfect for Beginners</h2>
