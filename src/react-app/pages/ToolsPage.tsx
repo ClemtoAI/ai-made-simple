@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import HeroSection from "@/react-app/components/HeroSection";
-import { Star, Search, ExternalLink, Filter } from "lucide-react";
+import { Star, Search, ExternalLink, Filter, AlertCircle } from "lucide-react";
 
 export default function ToolsPage() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -20,6 +20,11 @@ export default function ToolsPage() {
       category: "Chatbot",
       price: "Free + Paid",
       pros: ["Easy to use", "Great for writing", "Excellent support"],
+      limitations: [
+        "Can be overconfident and wrong - always fact-check important information",
+        "Free version uses older model (GPT-3.5)",
+        "Sometimes goes offline during high demand"
+      ],
       url: "https://chat.openai.com",
       logo: "🤖"
     },
@@ -31,6 +36,11 @@ export default function ToolsPage() {
       category: "Chatbot", 
       price: "Free + Paid",
       pros: ["Very safe", "Great reasoning", "Long conversations"],
+      limitations: [
+        "Free tier more limited than ChatGPT",
+        "Slightly slower response times",
+        "Can be overly cautious and refuse harmless requests"
+      ],
       url: "https://claude.ai",
       logo: "🧠"
     },
@@ -42,6 +52,11 @@ export default function ToolsPage() {
       category: "Writing",
       price: "Free + Paid",
       pros: ["Easy setup", "Works everywhere", "Real-time help"],
+      limitations: [
+        "Free version only catches basic errors",
+        "AI features require expensive premium subscription (£12/month)",
+        "Can make writing feel robotic if overused"
+      ],
       url: "https://grammarly.com",
       logo: "✍️"
     }
@@ -55,6 +70,11 @@ export default function ToolsPage() {
       rating: 4.5,
       category: "Productivity",
       price: "Paid",
+      limitations: [
+        "Requires existing Notion subscription",
+        "AI features add £8/month on top of base cost",
+        "Only works within Notion - not a standalone tool"
+      ],
       url: "https://notion.so",
       logo: "📝"
     },
@@ -65,6 +85,11 @@ export default function ToolsPage() {
       rating: 4.4,
       category: "Creative",
       price: "Paid",
+      limitations: [
+        "No free tier - minimum £8/month",
+        "Requires Discord account to use",
+        "Steep learning curve for prompt writing"
+      ],
       url: "https://midjourney.com",
       logo: "🎨"
     },
@@ -75,6 +100,11 @@ export default function ToolsPage() {
       rating: 4.3,
       category: "Marketing",
       price: "Paid",
+      limitations: [
+        "Expensive - starts at £39/month",
+        "Focused only on marketing content",
+        "Output quality varies significantly"
+      ],
       url: "https://jasper.ai",
       logo: "📢"
     },
@@ -85,6 +115,11 @@ export default function ToolsPage() {
       rating: 4.2,
       category: "Marketing",
       price: "Free + Paid",
+      limitations: [
+        "Free version very limited (2,000 words/month)",
+        "Output can feel generic without editing",
+        "Focused on marketing - not general purpose"
+      ],
       url: "https://copy.ai",
       logo: "✨"
     },
@@ -95,6 +130,11 @@ export default function ToolsPage() {
       rating: 4.4,
       category: "Productivity",
       price: "Free + Paid",
+      limitations: [
+        "Free version limited to 600 minutes/month",
+        "Transcription accuracy drops with accents",
+        "Requires good audio quality to work well"
+      ],
       url: "https://otter.ai",
       logo: "🎤"
     },
@@ -105,6 +145,11 @@ export default function ToolsPage() {
       rating: 4.3,
       category: "Creative",
       price: "Free + Paid",
+      limitations: [
+        "Best AI features require Canva Pro (£10.99/month)",
+        "Free tier has limited AI generations",
+        "Can produce generic-looking designs"
+      ],
       url: "https://canva.com",
       logo: "🎨"
     }
@@ -145,7 +190,7 @@ export default function ToolsPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {beginnerTools.map((tool) => (
-              <div key={tool.id} className="bg-white rounded-lg shadow-md p-5 border border-gray-200 flex flex-col" style={{ minHeight: '400px' }}>
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-5 border border-gray-200 flex flex-col">
                 <div className="flex items-center mb-4">
                   <span className="text-3xl mr-3">{tool.logo}</span>
                   <div>
@@ -173,12 +218,29 @@ export default function ToolsPage() {
                   <ul className="space-y-1">
                     {tool.pros.map((pro, index) => (
                       <li key={index} className="text-sm text-gray-600 flex items-start">
-                        <span className="mr-2">•</span>
+                        <span className="text-green-500 mr-2">✓</span>
                         {pro}
                       </li>
                     ))}
                   </ul>
                 </div>
+
+                {tool.limitations && (
+                  <div className="mb-4 pt-3 border-t border-gray-200">
+                    <h4 className="text-sm font-medium text-gray-900 mb-2 flex items-center">
+                      <AlertCircle className="w-4 h-4 text-amber-500 mr-1" />
+                      Things to know:
+                    </h4>
+                    <ul className="space-y-1">
+                      {tool.limitations.map((limitation, index) => (
+                        <li key={index} className="text-sm text-gray-600 flex items-start">
+                          <span className="text-amber-500 mr-2 flex-shrink-0">•</span>
+                          <span>{limitation}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 
                 <div className="mt-auto">
                   <a href={tool.url}
@@ -236,7 +298,7 @@ export default function ToolsPage() {
           {/* More AI Tools */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredTools.map((tool) => (
-              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col" style={{ minHeight: '270px' }}>
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col">
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">{tool.logo}</span>
                   <div>
@@ -258,6 +320,23 @@ export default function ToolsPage() {
                   </span>
                   <span className="text-xs font-medium text-green-600">{tool.price}</span>
                 </div>
+
+                {tool.limitations && (
+                  <div className="mb-4 pt-3 border-t border-gray-200">
+                    <h4 className="text-xs font-medium text-gray-900 mb-2 flex items-center">
+                      <AlertCircle className="w-3 h-3 text-amber-500 mr-1" />
+                      Things to know:
+                    </h4>
+                    <ul className="space-y-1">
+                      {tool.limitations.map((limitation, index) => (
+                        <li key={index} className="text-xs text-gray-600 flex items-start">
+                          <span className="text-amber-500 mr-2 flex-shrink-0">•</span>
+                          <span>{limitation}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
                 
                 <div className="mt-auto">
                   <a href={tool.url}
