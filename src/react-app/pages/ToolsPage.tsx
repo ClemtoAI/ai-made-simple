@@ -230,3 +230,136 @@ export default function ToolsPage() {
                     <h4 className="text-sm font-medium text-gray-900 mb-2 flex items-center">
                       <AlertCircle className="w-4 h-4 text-amber-500 mr-1" />
                       Things to know:
+                    </h4>
+                    <ul className="space-y-1">
+                      {tool.limitations.map((limitation, index) => (
+                        <li key={index} className="text-sm text-gray-600 flex items-start">
+                          <span className="text-amber-500 mr-2 flex-shrink-0">•</span>
+                          <span>{limitation}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
+                <div className="mt-auto">
+                  <a href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
+                  >
+                    <span>Try It Now</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Explore More Tools */}
+        <section>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Explore More Tools</h2>
+          <p className="text-gray-600 mb-6 text-lg">
+            Ready to explore? Here are more specialised AI tools for specific needs.
+          </p>
+
+          {/* Search and Filter */}
+          <div className="bg-white rounded-lg shadow-md p-6 mb-8 border border-gray-200">
+            <div className="flex flex-col md:flex-row gap-4">
+              <div className="flex-1 relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <input
+                  type="text"
+                  placeholder="Search tools..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+              </div>
+              
+              <div className="relative">
+                <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                <select
+                  value={selectedCategory}
+                  onChange={(e) => setSelectedCategory(e.target.value)}
+                  className="pl-10 pr-8 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent appearance-none bg-white"
+                >
+                  {categories.map((category) => (
+                    <option key={category} value={category}>
+                      {category === "all" ? "All Categories" : category}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          </div>
+
+          {/* More AI Tools */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredTools.map((tool) => (
+              <div key={tool.id} className="bg-white rounded-lg shadow-md p-6 border border-gray-200 flex flex-col">
+                <div className="flex items-center mb-3">
+                  <span className="text-2xl mr-3">{tool.logo}</span>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900">{tool.name}</h3>
+                    <div className="flex items-center space-x-2">
+                      <div className="flex items-center">
+                        {renderStars(tool.rating)}
+                      </div>
+                      <span className="text-xs text-gray-600">{tool.rating}</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <p className="text-gray-600 text-sm mb-4">{tool.description}</p>
+                
+                <div className="flex items-center justify-between mb-4">
+                  <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-800">
+                    {tool.category}
+                  </span>
+                  <span className="text-xs font-medium text-green-600">{tool.price}</span>
+                </div>
+
+                {tool.limitations && (
+                  <div className="mb-4 pt-3 border-t border-gray-200">
+                    <h4 className="text-xs font-medium text-gray-900 mb-2 flex items-center">
+                      <AlertCircle className="w-3 h-3 text-amber-500 mr-1" />
+                      Things to know:
+                    </h4>
+                    <ul className="space-y-1">
+                      {tool.limitations.map((limitation, index) => (
+                        <li key={index} className="text-xs text-gray-600 flex items-start">
+                          <span className="text-amber-500 mr-2 flex-shrink-0">•</span>
+                          <span>{limitation}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                
+                <div className="mt-auto">
+                  <a href={tool.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 text-sm"
+                  >
+                    <span>Try It Now</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Pricing Disclaimer - Now at Bottom */}
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mt-8">
+          <p className="text-sm text-gray-700 text-center">
+            <strong>Pricing note:</strong> Costs shown are approximate (October 2025). Always check the official website for current pricing.
+          </p>
+        </div>
+      </div>
+    </>
+  );
+}
