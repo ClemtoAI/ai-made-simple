@@ -185,8 +185,7 @@ export default function ToolsPage() {
         {/* Pricing Disclaimer */}
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
           <p className="text-sm text-gray-700">
-            <strong>Pricing note:</strong> Costs shown are approximate and based on October 2025 rates. 
-            Most tools charge in USD - your bank converts to GBP. Always check the official website for current pricing.
+            <strong>Pricing note:</strong> Costs shown are approximate (October 2025). Always check the official website for current pricing.
           </p>
         </div>
 
