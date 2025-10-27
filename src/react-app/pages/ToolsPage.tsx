@@ -21,9 +21,9 @@ export default function ToolsPage() {
       price: "Free + Paid",
       pros: ["Easy to use", "Great for writing", "Works for many tasks"],
       limitations: [
-        "Free tier uses GPT-4o but limits messages (about 10 per 5 hours)",
+        "Free tier uses GPT-4o but limits messages",
         "Can be overconfident and give wrong answers - always fact-check",
-        "Plus plan costs around £20/month for higher limits"
+        "Plus plan costs around £20/month"
       ],
       url: "https://chat.openai.com",
       logo: "🤖"
@@ -72,7 +72,7 @@ export default function ToolsPage() {
       price: "Paid",
       limitations: [
         "Requires Notion Business plan (around £17/month per user)",
-        "Built natively inside Notion’s workspace—no separate app needed",
+        "Built natively inside Notion’s workspace",
         "Free and Plus plans get only a small trial of AI features"
       ],
       url: "https://notion.so",
@@ -88,7 +88,7 @@ export default function ToolsPage() {
       limitations: [
         "No free tier - Basic plan starts at £8/month",
         "Steep learning curve for writing good prompts",
-        "Paid only; ideal for creative image generation from text prompts"
+        "Ideal for creative image generation from text prompts"
       ],
       url: "https://midjourney.com",
       logo: "🎨"
@@ -118,7 +118,7 @@ export default function ToolsPage() {
       limitations: [
         "Free version very limited (2,000 words/month)",
         "Paid plans start around £23/month",
-        "Great for short-form ideas and brainstorming marketing copy"
+        "Great for brainstorming marketing copy"
       ],
       url: "https://copy.ai",
       logo: "✨"
