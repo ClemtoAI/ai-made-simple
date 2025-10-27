@@ -21,9 +21,9 @@ export default function ToolsPage() {
       price: "Free + Paid",
       pros: ["Easy to use", "Great for writing", "Works for many tasks"],
       limitations: [
-        "Free tier uses GPT-4o but limits messages (about 10 per 5 hours)",
+        "Free tier uses GPT-4o but limits messages",
         "Can be overconfident and give wrong answers - always fact-check",
-        "Plus plan costs around £20/month for higher limits"
+        "Plus plan costs around £20/month"
       ],
       url: "https://chat.openai.com",
       logo: "🤖"
@@ -39,7 +39,7 @@ export default function ToolsPage() {
       limitations: [
         "Free tier has limited daily messages",
         "Pro plan around £20/month (billed in USD)",
-        "Can be overly cautious and refuse harmless requests"
+        "Designed for clear reasoning and deep conversations"
       ],
       url: "https://claude.ai",
       logo: "🧠"
@@ -72,7 +72,7 @@ export default function ToolsPage() {
       price: "Paid",
       limitations: [
         "Requires Notion Business plan (around £17/month per user)",
-        "Only works within Notion - not standalone",
+        "Built natively inside Notion’s workspace",
         "Free and Plus plans get only a small trial of AI features"
       ],
       url: "https://notion.so",
@@ -88,7 +88,7 @@ export default function ToolsPage() {
       limitations: [
         "No free tier - Basic plan starts at £8/month",
         "Steep learning curve for writing good prompts",
-        "Commercial use above £790K revenue requires Pro plan"
+        "Ideal for creative image generation from text prompts"
       ],
       url: "https://midjourney.com",
       logo: "🎨"
@@ -103,7 +103,7 @@ export default function ToolsPage() {
       limitations: [
         "Expensive - starts at around £59/month per user",
         "Only 7-day free trial, no free plan",
-        "Output quality varies and often needs editing"
+        "Optimised for marketing teams who want branded content fast"
       ],
       url: "https://jasper.ai",
       logo: "📢"
@@ -118,7 +118,7 @@ export default function ToolsPage() {
       limitations: [
         "Free version very limited (2,000 words/month)",
         "Paid plans start around £23/month",
-        "Output can feel generic and needs human editing"
+        "Great for short-form ideas and brainstorming marketing copy"
       ],
       url: "https://copy.ai",
       logo: "✨"
