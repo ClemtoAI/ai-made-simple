@@ -23,7 +23,7 @@ export default function ToolsPage() {
       limitations: [
         "Free tier uses GPT-4o but limits messages (about 10 per 5 hours)",
         "Can be overconfident and give wrong answers - always fact-check",
-        "Plus plan costs around £16/month for higher limits"
+        "Plus plan costs around £20/month for higher limits"
       ],
       url: "https://chat.openai.com",
       logo: "🤖"
@@ -38,7 +38,7 @@ export default function ToolsPage() {
       pros: ["Very safe", "Great reasoning", "Long conversations"],
       limitations: [
         "Free tier has limited daily messages",
-        "Pro plan around £13/month (billed annually in USD)",
+        "Pro plan around £20/month (billed in USD)",
         "Can be overly cautious and refuse harmless requests"
       ],
       url: "https://claude.ai",
@@ -54,7 +54,7 @@ export default function ToolsPage() {
       pros: ["Easy setup", "Works everywhere", "Real-time help"],
       limitations: [
         "Free version only catches basic grammar errors",
-        "Pro plan costs around £24/month (or £114/year) for AI features",
+        "Pro plan costs around £25/month (or £120/year) for AI features",
         "Can make writing feel robotic if overused"
       ],
       url: "https://grammarly.com",
@@ -101,7 +101,7 @@ export default function ToolsPage() {
       category: "Marketing",
       price: "Paid",
       limitations: [
-        "Expensive - starts at around £31/month per user",
+        "Expensive - starts at around £59/month per user",
         "Only 7-day free trial, no free plan",
         "Output quality varies and often needs editing"
       ],
@@ -132,7 +132,7 @@ export default function ToolsPage() {
       price: "Free + Paid",
       limitations: [
         "Free tier limited to 300 minutes/month and 30-minute meetings",
-        "Pro plan around £13/month (billed annually)",
+        "Pro plan around £8/month",
         "Accuracy drops with multiple speakers or accents"
       ],
       url: "https://otter.ai",
@@ -147,7 +147,7 @@ export default function ToolsPage() {
       price: "Free + Paid",
       limitations: [
         "Free tier limited to about 50 AI prompts per month",
-        "Pro plan £11/month or £100/year for unlimited AI features",
+        "Pro plan £13/month or £100/year for unlimited AI features",
         "AI-generated designs can look generic without editing"
       ],
       url: "https://canva.com",
